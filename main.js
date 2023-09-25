@@ -12,6 +12,7 @@ document.querySelector('#app').innerHTML = `
       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
     <h1 class="text-3xl bg-black text-white px-4 py-4">Hello Vite!</h1>
+    <h2 class="text-3xl bg-black text-white px-4 py-4">Hello  I am extra text!</h2>
     <div class="">
       <button id="counter" type="button"></button>
     </div>
