@@ -12,5 +12,10 @@ export default defineConfig(({command, mode, ssrBuild}) => {
     }
 
     const env = loadEnv(mode, process.cwd(), "VITE_");
-    return {};
+
+    return {
+        css: {
+            devSourcemap: true,
+        }
+    };
 })
