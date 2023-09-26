@@ -3,6 +3,8 @@ import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
+const modeText = import.meta.env.DEV ? "I am in Development mode" : "I am in Production mode";
+
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -11,8 +13,7 @@ document.querySelector('#app').innerHTML = `
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
-    <h1 class="text-3xl bg-black text-white px-4 py-4">Hello Vite!</h1>
-    <h2 class="text-3xl bg-black text-white px-4 py-4">Hello  I am extra text!</h2>
+    <h1 class="text-3xl bg-black text-white px-4 py-4">${modeText}!</h1>
     <div class="">
       <button id="counter" type="button"></button>
     </div>
