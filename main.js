@@ -1,7 +1,10 @@
-import './style.css'
+// import './style.css'
 import javascriptLogo from './javascript.svg'
+import {initExpandableTables} from './table.js'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
+
+initExpandableTables();
 
 const modeText = import.meta.env.DEV ? "I am in Development mode" : "I am in Production mode";
 

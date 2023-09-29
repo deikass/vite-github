@@ -1,13 +1,511 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="tables.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Vite App</title>
-  </head>
-  <body>
-    <div class="" id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+</head>
+<body>
+<div class="container flex-grow-1 kpu-main-container">
+    <div class="container flex-grow-1">
+        <main class="content-main">
+            <div class="flashbags container">
+            </div>
+
+            <div class="container">
+                <div class="container-main">
+
+                    <div class="account account-content">
+                        <div class="account-content-aside">
+                            <div class="account-aside">
+                                <div class="account-menu-inner">
+                                    <div class="account-aside-header">
+                                        <div class="account-aside-header-icon">
+                      <span class="icon icon-user icon-lg">
+                        <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20.6001 22.7992V20.3992C20.6001 19.1262 20.0944 17.9053 19.1942 17.0051C18.2941 16.1049 17.0732 15.5992 15.8001 15.5992H6.20014C4.9271 15.5992 3.70621 16.1049 2.80603 17.0051C1.90586 17.9053 1.40015 19.1262 1.40015 20.3992V22.7992M15.8001 5.99922C15.8001 8.65018 13.6511 10.7992 11.0001 10.7992C8.34917 10.7992 6.20014 8.65018 6.20014 5.99922C6.20014 3.34825 8.34917 1.19922 11.0001 1.19922C13.6511 1.19922 15.8001 3.34825 15.8001 5.99922Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                fill="none"></path>
+                        </svg>
+
+                      </span>
+                                        </div>
+                                        <div class="account-aside-header-customer">
+                                            <div class="account-aside-header-customer-wrapper">
+                                                <span>Edgaras</span>
+                                                <span> Tonkunas</span>
+                                            </div>
+                                            <span class="account-aside-header-customer-email">edgaras.tonkunas@nfq.lt</span>
+                                        </div>
+
+                                        <div class="account-aside-header-logout d-lg-none">
+                                            <a href="/account/default/logout" logout-button="true"
+                                               class="account-aside-header-logout-link">
+                        <span class="icon icon-logout icon-xs">
+                          <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13.5H2.33333C1.97971 13.5 1.64057 13.3595 1.39052 13.1095C1.14048 12.8594 1 12.5203 1 12.1667V2.83333C1 2.47971 1.14048 2.14057 1.39052 1.89052C1.64057 1.64048 1.97971 1.5 2.33333 1.5H5M9.66667 10.8333L13 7.5M13 7.5L9.66667 4.16667M13 7.5H5"
+                                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round" fill="none"></path>
+                          </svg>
+
+                        </span> Atsijungti
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="list-group list-group-flush account-aside-list-group">
+
+                                        <a href="/account/order" title="Mano rezervacijos"
+                                           class="list-group-item list-group-item-action account-aside-item">
+                      <span class="icon icon-reservations icon-xs">
+                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.18 4.14026L7 7.50693L12.82 4.14026M7 14.2203V7.50026M13 10.1669V4.83359C12.9998 4.59978 12.938 4.37013 12.821 4.1677C12.704 3.96527 12.5358 3.79717 12.3333 3.68026L7.66667 1.01359C7.46397 0.896569 7.23405 0.834961 7 0.834961C6.76595 0.834961 6.53603 0.896569 6.33333 1.01359L1.66667 3.68026C1.46418 3.79717 1.29599 3.96527 1.17897 4.1677C1.06196 4.37013 1.00024 4.59978 1 4.83359V10.1669C1.00024 10.4007 1.06196 10.6304 1.17897 10.8328C1.29599 11.0353 1.46418 11.2034 1.66667 11.3203L6.33333 13.9869C6.53603 14.104 6.76595 14.1656 7 14.1656C7.23405 14.1656 7.46397 14.104 7.66667 13.9869L12.3333 11.3203C12.5358 11.2034 12.704 11.0353 12.821 10.8328C12.938 10.6304 12.9998 10.4007 13 10.1669Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                fill="none"></path>
+                        </svg>
+
+                      </span> Mano rezervacijos
+                                        </a>
+
+                                        <a href="/account" title="Mano informacija"
+                                           class="list-group-item list-group-item-action account-aside-item">
+                      <span class="icon icon-user icon-xs">
+                        <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20.6001 22.7992V20.3992C20.6001 19.1262 20.0944 17.9053 19.1942 17.0051C18.2941 16.1049 17.0732 15.5992 15.8001 15.5992H6.20014C4.9271 15.5992 3.70621 16.1049 2.80603 17.0051C1.90586 17.9053 1.40015 19.1262 1.40015 20.3992V22.7992M15.8001 5.99922C15.8001 8.65018 13.6511 10.7992 11.0001 10.7992C8.34917 10.7992 6.20014 8.65018 6.20014 5.99922C6.20014 3.34825 8.34917 1.19922 11.0001 1.19922C13.6511 1.19922 15.8001 3.34825 15.8001 5.99922Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                fill="none"></path>
+                        </svg>
+
+                      </span> Mano informacija
+                                        </a>
+
+                                        <a href="/account/kpu-contracts" title="Mano sutartys"
+                                           class="list-group-item list-group-item-action account-aside-item is-active">
+                      <span class="icon icon-agreements icon-xs">
+                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.33341 0.833008H3.00008C2.64646 0.833008 2.30732 0.973484 2.05727 1.22353C1.80722 1.47358 1.66675 1.81272 1.66675 2.16634V12.833C1.66675 13.1866 1.80722 13.5258 2.05727 13.7758C2.30732 14.0259 2.64646 14.1663 3.00008 14.1663H11.0001C11.3537 14.1663 11.6928 14.0259 11.9429 13.7758C12.1929 13.5258 12.3334 13.1866 12.3334 12.833V4.83301M8.33341 0.833008L12.3334 4.83301M8.33341 0.833008V4.83301H12.3334M9.66675 8.16634H4.33341M9.66675 10.833H4.33341M5.66675 5.49967H4.33341"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                fill="none"></path>
+                        </svg>
+
+                      </span> Mano sutartys
+                                        </a>
+
+                                        <a href="/account/kpu-ship-leave" title="Informavimas"
+                                           class="list-group-item list-group-item-action account-aside-item">
+                      <span class="icon icon-information icon-xs">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.99992 10.1663V7.49967M7.99992 4.83301H8.00659M14.6666 7.49967C14.6666 11.1816 11.6818 14.1663 7.99992 14.1663C4.31802 14.1663 1.33325 11.1816 1.33325 7.49967C1.33325 3.81778 4.31802 0.833008 7.99992 0.833008C11.6818 0.833008 14.6666 3.81778 14.6666 7.49967Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                fill="none"></path>
+                        </svg>
+
+                      </span> Informavimas
+                                        </a>
+
+                                        <a href="/account/profile" title="Slaptažodžio keitimas"
+                                           class="list-group-item list-group-item-action account-aside-item">
+                      <span class="icon icon-lock icon-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15"
+                             version="1.1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;"
+                                d="M 7.5 8.125 C 7.15625 8.125 6.875 8.40625 6.875 8.75 L 6.875 10.625 C 6.875 10.96875 7.15625 11.25 7.5 11.25 C 7.84375 11.25 8.125 10.96875 8.125 10.625 L 8.125 8.75 C 8.125 8.40625 7.84375 8.125 7.5 8.125 Z M 10.625 5.625 L 10.625 4.375 C 10.625 2.648438 9.226562 1.25 7.5 1.25 C 5.773438 1.25 4.375 2.648438 4.375 4.375 L 4.375 5.625 C 3.339844 5.625 2.5 6.464844 2.5 7.5 L 2.5 11.875 C 2.5 12.910156 3.339844 13.75 4.375 13.75 L 10.625 13.75 C 11.660156 13.75 12.5 12.910156 12.5 11.875 L 12.5 7.5 C 12.5 6.464844 11.660156 5.625 10.625 5.625 Z M 5.625 4.375 C 5.625 3.339844 6.464844 2.5 7.5 2.5 C 8.535156 2.5 9.375 3.339844 9.375 4.375 L 9.375 5.625 L 5.625 5.625 Z M 11.25 11.875 C 11.25 12.21875 10.96875 12.5 10.625 12.5 L 4.375 12.5 C 4.03125 12.5 3.75 12.21875 3.75 11.875 L 3.75 7.5 C 3.75 7.15625 4.03125 6.875 4.375 6.875 L 10.625 6.875 C 10.96875 6.875 11.25 7.15625 11.25 7.5 Z M 11.25 11.875 "></path>
+                        </svg>
+
+                      </span> Slaptažodžio keitimas
+                                        </a>
+                                    </div>
+
+                                    <a href="/account/default/logout" logout-button="true"
+                                       class="list-group-item list-group-item-action account-aside-item account-aside-btn d-none d-lg-flex">
+                    <span class="icon icon-logout icon-xs">
+                      <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 13.5H2.33333C1.97971 13.5 1.64057 13.3595 1.39052 13.1095C1.14048 12.8594 1 12.5203 1 12.1667V2.83333C1 2.47971 1.14048 2.14057 1.39052 1.89052C1.64057 1.64048 1.97971 1.5 2.33333 1.5H5M9.66667 10.8333L13 7.5M13 7.5L9.66667 4.16667M13 7.5H5"
+                              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                              fill="none"></path>
+                      </svg>
+
+                    </span> Atsijungti
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="account-content-main">
+                            <div class="kpu-contracts">
+                                <div class="account-kpu-contracts-main">
+                                    <div class="account-kpu-contracts-overview">
+                                        <div class="kpu-contract-table">
+                                            <div>
+                                                September 20, 2023 09:21 ----- kpu_contract_12345_650a8f61b09d9.doc
+                                                ----- <a
+                                                    href="/account/kpu-contracts/17dddfada9fd46ffbecef64b7d473dad/download">Parsisiusti</a>
+                                            </div>
+                                            <div>
+                                                September 20, 2023 09:32 ----- kpu_contract_12345_650a91fa8d7fa.doc
+                                                ----- <a
+                                                    href="/account/kpu-contracts/18e4340eafd44a71b6667d8919ee3f30/download">Parsisiusti</a>
+                                            </div>
+                                            <table class="table" data-expandable-table>
+                                                <thead>
+                                                <tr>
+                                                    <th>Sutarties Nr</th>
+                                                    <th>Laivo Nr</th>
+                                                    <th>Sudarymo data</th>
+                                                    <th>Sutarties tipas</th>
+                                                    <th>Būsena</th>
+                                                    <th>Galioja iki</th>
+                                                    <th></th>
+                                                </tr>
+                                                </thead>
+
+                                                <tbody class="kpu-contract-table__row-group" data-row-group>
+                                                <tr data-header-row>
+                                                    <td><span class="d-inline-block d-md-none">Sutarties Nr:</span>
+                                                        <button data-expand-button>
+                                                            <strong>+</strong>
+                                                        </button>
+                                                        <button data-collapse-button class="d-none">
+                                                            <strong>-</strong>
+                                                        </button>
+                                                        <span>12345</span>
+                                                    </td>
+                                                    <td>
+                              <span class="d-inline-block d-md-none">
+                                Laivo Nr:
+                              </span>
+                                                        <span>LTU-1517</span>
+                                                    </td>
+                                                    <td>
+                              <span class="d-inline-block d-md-none">
+                                Sudarymo data:
+                              </span>
+                                                        <span>2023-09-19</span>
+                                                    </td>
+                                                    <td class="contract-type">
+                              <span class="d-inline-block d-md-none">
+                                Sutarties tipas:
+                              </span>
+                                                        <span>
+                                12345
+                              </span>
+                                                    </td>
+                                                    <td class="kpu-agreements-status">
+                              <span class="d-inline-block d-md-none">
+                                Būsena:
+                              </span>
+                                                        <span class="table-order-status table-order-status-not_valid">
+                                Negaliojanti
+                              </span>
+                                                    </td>
+                                                    <td>
+                              <span class="d-inline-block d-md-none">
+                                Galioja iki:
+                              </span>
+                                                        <span>2023-09-20</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="/account/kpu-contracts/41ecf4eb652248448b309f4ec4b11e02/download-all"
+                                                           class="download-agreements-link">
+                                <span class="icon icon-download-icon">
+                                  <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 11.5V14.8333C16 15.2754 15.8244 15.6993 15.5118 16.0118C15.1993 16.3244 14.7754 16.5 14.3333 16.5H2.66667C2.22464 16.5 1.80072 16.3244 1.48816 16.0118C1.17559 15.6993 1 15.2754 1 14.8333V11.5M4.33333 7.33333L8.5 11.5M8.5 11.5L12.6667 7.33333M8.5 11.5V1.5"
+                                          stroke="#0067B0" stroke-width="1.66667" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                  </svg>
+
+                                </span>kpu.account.contracts.downloadAll
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="d-none">
+                                                    <td colspan="2" class="font-weight-bold pl-5">Dokumento data</td>
+                                                    <td colspan="5" class="font-weight-bold">Pavadinimas</td>
+                                                </tr>
+
+                                                <tr class="d-none">
+                                                    <td colspan="2" class="pl-5">2022-06-06</td>
+                                                    <td colspan="4" class="">Labai labai ilgas dokumento pavadinimas
+                                                    </td>
+                                                    <td>
+                                                        <a href="/account/kpu-contracts/41ecf4eb652248448b309f4ec4b11e02/download-all"
+                                                           class="download-agreements-link"><span
+                                                                class="icon icon-download-icon">
+                                                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16 11.5V14.8333C16 15.2754 15.8244 15.6993 15.5118 16.0118C15.1993 16.3244 14.7754 16.5 14.3333 16.5H2.66667C2.22464 16.5 1.80072 16.3244 1.48816 16.0118C1.17559 15.6993 1 15.2754 1 14.8333V11.5M4.33333 7.33333L8.5 11.5M8.5 11.5L12.6667 7.33333M8.5 11.5V1.5"
+                                                                      stroke="#0067B0" stroke-width="1.66667"
+                                                                      stroke-linecap="round"
+                                                                      stroke-linejoin="round"></path>
+                                                            </svg>
+                                                        </span>
+                                                            Parsisiųsti
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="d-none">
+                                                    <td colspan="2" class="pl-5">2022-06-06</td>
+                                                    <td colspan="4" class="">Labai labai ilgas dokumento pavadinimas
+                                                    </td>
+                                                    <td>
+                                                        <a href="/account/kpu-contracts/41ecf4eb652248448b309f4ec4b11e02/download-all"
+                                                           class="download-agreements-link"><span
+                                                                class="icon icon-download-icon">
+                                                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16 11.5V14.8333C16 15.2754 15.8244 15.6993 15.5118 16.0118C15.1993 16.3244 14.7754 16.5 14.3333 16.5H2.66667C2.22464 16.5 1.80072 16.3244 1.48816 16.0118C1.17559 15.6993 1 15.2754 1 14.8333V11.5M4.33333 7.33333L8.5 11.5M8.5 11.5L12.6667 7.33333M8.5 11.5V1.5"
+                                                                      stroke="#0067B0" stroke-width="1.66667"
+                                                                      stroke-linecap="round"
+                                                                      stroke-linejoin="round"></path>
+                                                            </svg>
+                                                        </span>
+                                                            Parsisiųsti
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="d-none">
+                                                    <td colspan="2" class="pl-5">2022-06-06</td>
+                                                    <td colspan="4" class="">Labai labai ilgas dokumento pavadinimas
+                                                    </td>
+                                                    <td>
+                                                        <a href="/account/kpu-contracts/41ecf4eb652248448b309f4ec4b11e02/download-all"
+                                                           class="download-agreements-link"><span
+                                                                class="icon icon-download-icon">
+                                                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16 11.5V14.8333C16 15.2754 15.8244 15.6993 15.5118 16.0118C15.1993 16.3244 14.7754 16.5 14.3333 16.5H2.66667C2.22464 16.5 1.80072 16.3244 1.48816 16.0118C1.17559 15.6993 1 15.2754 1 14.8333V11.5M4.33333 7.33333L8.5 11.5M8.5 11.5L12.6667 7.33333M8.5 11.5V1.5"
+                                                                      stroke="#0067B0" stroke-width="1.66667"
+                                                                      stroke-linecap="round"
+                                                                      stroke-linejoin="round"></path>
+                                                            </svg>
+                                                        </span>
+                                                            Parsisiųsti
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+
+                                                <tbody data-row-group>
+                                                <tr data-header-row>
+                                                    <td>
+                              <span class="d-inline-block d-md-none">
+                                Sutarties Nr:
+                              </span>
+                                                        <button data-expand-button>
+                                                            <strong>+</strong>
+                                                        </button>
+                                                        <button data-collapse-button class="d-none">
+                                                            <strong>-</strong>
+                                                        </button>
+                                                        <span>12345</span>
+                                                        <span>12345</span>
+                                                    </td>
+                                                    <td>
+                              <span class="d-inline-block d-md-none">
+                                Laivo Nr:
+                              </span>
+                                                        <span>LTU-1517</span>
+                                                    </td>
+                                                    <td>
+                              <span class="d-inline-block d-md-none">
+                                Sudarymo data:
+                              </span>
+                                                        <span>2023-09-19</span>
+                                                    </td>
+                                                    <td class="contract-type">
+                              <span class="d-inline-block d-md-none">
+                                Sutarties tipas:
+                              </span>
+                                                        <span>
+                                12345
+                              </span>
+                                                    </td>
+                                                    <td class="kpu-agreements-status">
+                              <span class="d-inline-block d-md-none">
+                                Būsena:
+                              </span>
+                                                        <span class="table-order-status table-order-status-not_valid">
+                                Negaliojanti
+                              </span>
+                                                    </td>
+                                                    <td>
+                              <span class="d-inline-block d-md-none">
+                                Galioja iki:
+                              </span>
+                                                        <span>2023-09-20</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="/account/kpu-contracts/41ecf4eb652248448b309f4ec4b11e02/download-all"
+                                                           class="download-agreements-link">
+                                <span class="icon icon-download-icon">
+                                  <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 11.5V14.8333C16 15.2754 15.8244 15.6993 15.5118 16.0118C15.1993 16.3244 14.7754 16.5 14.3333 16.5H2.66667C2.22464 16.5 1.80072 16.3244 1.48816 16.0118C1.17559 15.6993 1 15.2754 1 14.8333V11.5M4.33333 7.33333L8.5 11.5M8.5 11.5L12.6667 7.33333M8.5 11.5V1.5"
+                                          stroke="#0067B0" stroke-width="1.66667" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                  </svg>
+
+                                </span>kpu.account.contracts.downloadAll
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="d-none">
+                                                    <td colspan="2" class="font-weight-bold pl-5">Dokumento data</td>
+                                                    <td colspan="5" class="font-weight-bold">Pavadinimas</td>
+                                                </tr>
+                                                <tr class="d-none">
+                                                    <td colspan="2" class="pl-5">2022-06-06</td>
+                                                    <td colspan="4" class="">Labai labai ilgas dokumento pavadinimas
+                                                    </td>
+                                                    <td>
+                                                        <a href="/account/kpu-contracts/41ecf4eb652248448b309f4ec4b11e02/download-all"
+                                                           class="download-agreements-link"><span
+                                                                class="icon icon-download-icon">
+                                                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16 11.5V14.8333C16 15.2754 15.8244 15.6993 15.5118 16.0118C15.1993 16.3244 14.7754 16.5 14.3333 16.5H2.66667C2.22464 16.5 1.80072 16.3244 1.48816 16.0118C1.17559 15.6993 1 15.2754 1 14.8333V11.5M4.33333 7.33333L8.5 11.5M8.5 11.5L12.6667 7.33333M8.5 11.5V1.5"
+                                                                      stroke="#0067B0" stroke-width="1.66667"
+                                                                      stroke-linecap="round"
+                                                                      stroke-linejoin="round"></path>
+                                                            </svg>
+                                                        </span>
+                                                            Parsisiųsti
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="d-none">
+                                                    <td colspan="2" class="pl-5">2022-06-06</td>
+                                                    <td colspan="4" class="">Labai labai ilgas dokumento pavadinimas
+                                                    </td>
+                                                    <td>
+                                                        <a href="/account/kpu-contracts/41ecf4eb652248448b309f4ec4b11e02/download-all"
+                                                           class="download-agreements-link"><span
+                                                                class="icon icon-download-icon">
+                                                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16 11.5V14.8333C16 15.2754 15.8244 15.6993 15.5118 16.0118C15.1993 16.3244 14.7754 16.5 14.3333 16.5H2.66667C2.22464 16.5 1.80072 16.3244 1.48816 16.0118C1.17559 15.6993 1 15.2754 1 14.8333V11.5M4.33333 7.33333L8.5 11.5M8.5 11.5L12.6667 7.33333M8.5 11.5V1.5"
+                                                                      stroke="#0067B0" stroke-width="1.66667"
+                                                                      stroke-linecap="round"
+                                                                      stroke-linejoin="round"></path>
+                                                            </svg>
+                                                        </span>
+                                                            Parsisiųsti
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+
+                                                <tbody data-row-group>
+                                                <tr data-header-row>
+                                                    <td>
+                              <span class="d-inline-block d-md-none">
+                                Sutarties Nr:
+                              </span>
+                                                        <button data-expand-button>
+                                                            <strong>+</strong>
+                                                        </button>
+                                                        <button data-collapse-button class="d-none">
+                                                            <strong>-</strong>
+                                                        </button>
+                                                        <span>12345</span>
+                                                        <span>12345</span>
+                                                    </td>
+                                                    <td>
+                              <span class="d-inline-block d-md-none">
+                                Laivo Nr:
+                              </span>
+                                                        <span>LTU-1517</span>
+                                                    </td>
+                                                    <td>
+                              <span class="d-inline-block d-md-none">
+                                Sudarymo data:
+                              </span>
+                                                        <span>2023-09-19</span>
+                                                    </td>
+                                                    <td class="contract-type">
+                              <span class="d-inline-block d-md-none">
+                                Sutarties tipas:
+                              </span>
+                                                        <span>
+                                12345
+                              </span>
+                                                    </td>
+                                                    <td class="kpu-agreements-status">
+                              <span class="d-inline-block d-md-none">
+                                Būsena:
+                              </span>
+                                                        <span class="table-order-status table-order-status-not_valid">
+                                Negaliojanti
+                              </span>
+                                                    </td>
+                                                    <td>
+                              <span class="d-inline-block d-md-none">
+                                Galioja iki:
+                              </span>
+                                                        <span>2023-09-20</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="/account/kpu-contracts/41ecf4eb652248448b309f4ec4b11e02/download-all"
+                                                           class="download-agreements-link">
+                                <span class="icon icon-download-icon">
+                                  <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 11.5V14.8333C16 15.2754 15.8244 15.6993 15.5118 16.0118C15.1993 16.3244 14.7754 16.5 14.3333 16.5H2.66667C2.22464 16.5 1.80072 16.3244 1.48816 16.0118C1.17559 15.6993 1 15.2754 1 14.8333V11.5M4.33333 7.33333L8.5 11.5M8.5 11.5L12.6667 7.33333M8.5 11.5V1.5"
+                                          stroke="#0067B0" stroke-width="1.66667" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                  </svg>
+
+                                </span>kpu.account.contracts.downloadAll
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="d-none">
+                                                    <td colspan="2" class="font-weight-bold pl-5">Dokumento data</td>
+                                                    <td colspan="5" class="font-weight-bold">Pavadinimas</td>
+                                                </tr>
+                                                <tr class="d-none">
+                                                    <td colspan="2" class="pl-5">2022-06-06</td>
+                                                    <td colspan="4" class="">Labai labai ilgas dokumento pavadinimas
+                                                    </td>
+                                                    <td>
+                                                        <a href="/account/kpu-contracts/41ecf4eb652248448b309f4ec4b11e02/download-all"
+                                                           class="download-agreements-link"><span
+                                                                class="icon icon-download-icon">
+                                                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M16 11.5V14.8333C16 15.2754 15.8244 15.6993 15.5118 16.0118C15.1993 16.3244 14.7754 16.5 14.3333 16.5H2.66667C2.22464 16.5 1.80072 16.3244 1.48816 16.0118C1.17559 15.6993 1 15.2754 1 14.8333V11.5M4.33333 7.33333L8.5 11.5M8.5 11.5L12.6667 7.33333M8.5 11.5V1.5"
+                                                                      stroke="#0067B0" stroke-width="1.66667"
+                                                                      stroke-linecap="round"
+                                                                      stroke-linejoin="round"></path>
+                                                            </svg>
+                                                        </span>
+                                                            Parsisiųsti
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<div class="" id="app"></div>
+<script type="module" src="/main.js"></script>
+</body>
 </html>

@@ -1,0 +1,23 @@
+td.kpu-agreements-status {
+    /*background: red;*/
+}
+
+td{
+    &.kpu-agreements-status {
+        /*background: green;*/
+    }
+}
+
+.is-active tr{
+    background: red;
+}
+
+.kpu-contract-table tbody.is-active tr td{
+        background: #E3F2FA80;
+}
+
+.kpu-contract-table tbody.is-active tr:first-child{
+        background: #E3F2FA;
+}
+
+
