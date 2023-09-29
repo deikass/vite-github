@@ -14,6 +14,9 @@ export default defineConfig(({command, mode, ssrBuild}) => {
     const env = loadEnv(mode, process.cwd(), "VITE_");
 
     return {
+        server: {
+            open: true,
+        },
         css: {
             devSourcemap: true,
         }
